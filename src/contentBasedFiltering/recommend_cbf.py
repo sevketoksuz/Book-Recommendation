@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import sklearn.metrics.pairwise as linear_kernel
+from sklearn.metrics.pairwise import linear_kernel
 
 def recommend_cbf(user_id, ratings_df, books_df, tfidf_matrix, indices, n=10):
     liked_books = ratings_df[
